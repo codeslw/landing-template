@@ -12,7 +12,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (props) => <Header {...props} />;
+const Template: Story = (props: any) => <Header {...props} />;
 
 export const Default = Template.bind({});
 Default.args = {};

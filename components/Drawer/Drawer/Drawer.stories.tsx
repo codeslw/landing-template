@@ -12,7 +12,10 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (props) => <Drawer {...props} />;
+const Template: Story = (props: any) => <Drawer {...props} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  open: false,
+  handleClose: () => { console.log("good") }
+};

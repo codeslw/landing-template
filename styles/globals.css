@@ -28,3 +28,27 @@ a {
     background: black;
   }
 }
+
+@layer components {
+  .app-container {
+    @apply mx-auto px-4 items-center pt-16 md:w-full lg:w-10/12 lg:px-7 xl:w-11/12 flex justify-between
+  }
+  .btn-primary {
+    @apply rounded-button bg-dark-button text-[#FAFAFA] text-[22px] leading-[31px] px-[70px] py-[18px] cursor-pointer hover:bg-gray-200 hover:text-gray-600
+  }
+  .text-title {
+    @apply text-4xl leading-[51px] font-medium text-dark-button
+  }
+  .text-small {
+    @apply text-lg font-normal leading-[25px] text-text-gray
+  }
+  .text-medium {
+    @apply text-xl font-bold
+  }
+  .text-mlight {
+    @apply text-xl font-normal
+  }
+  .btn-navigation {
+    @apply  rounded-button flex lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] xl:w-20 xl:h-20 bg-dark-button items-center justify-center hover:bg-gray-200
+   }
+}

@@ -15,17 +15,17 @@ module.exports = {
   actions: [
     {
       type: 'add',
-      path: 'src/ui/{{folder}}/{{properCase name}}/index.ts',
+      path: 'components/{{folder}}/{{properCase name}}/index.ts',
       templateFile: 'generators/component/index.ts.hbs',
     },
     {
       type: 'add',
-      path: 'src/ui/{{folder}}/{{properCase name}}/{{properCase name}}.tsx',
+      path: 'components/{{folder}}/{{properCase name}}/{{properCase name}}.tsx',
       templateFile: 'generators/component/Component.tsx.hbs',
     },
     {
       type: 'add',
-      path: 'src/ui/{{folder}}/{{properCase name}}/{{properCase name}}.stories.tsx',
+      path: 'components/{{folder}}/{{properCase name}}/{{properCase name}}.stories.tsx',
       templateFile: 'generators/component/Component.stories.tsx.hbs',
     },
   ],

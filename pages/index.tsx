@@ -34,7 +34,7 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(_contex: any) {
   return {
     props: {},
   }
